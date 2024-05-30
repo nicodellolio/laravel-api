@@ -1,0 +1,64 @@
+@import '~bootstrap/scss/bootstrap';
+
+*{
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    background-color: #590b4c;
+}
+.p-bg-lighter{
+    background-color: #b749a5;
+}
+.p-bg-light{
+    background-color: #99057b;
+}
+.p-bg-darker{
+    background-color: #590441;
+}
+
+.paginator{
+    .page-link{
+        color:#4a225e;
+    }
+    .active > .page-link{
+        background-color:#8940AD;
+        border-color: #4a225e;
+        color: #fff;
+    }
+}
+.image_box{
+    gap: 2rem;
+}
+img.jumbo-img{
+    // position: absolute;
+    right: 15%;
+    bottom: 20%;
+    width: 40%;
+    // min-width: 400px;
+    // max-width: 550px;
+}
+.jumbotron{
+    min-height: 645px;
+    h1{
+        font-size: 6rem;
+    }
+}
+.p-bg-table {
+    --bs-table-color: #fff;
+    --bs-table-bg: #440244;
+    border: 1px solid #fff;
+    --bs-table-striped-bg: #860686;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #860686;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #860686;
+    --bs-table-hover-color: #fff;
+    color: var(--bs-table-color);
+}
+.p-bg-table-head {
+    --bs-table-color: #fff;
+    --bs-table-bg: #330133;
+    border: 1px solid #fff;
+    color: var(--bs-table-color);
+}
