@@ -16,8 +16,6 @@ return new class extends Migration
             $table->string('title', 150);
             $table->string('slug', 150)->nullable();
             $table->text('description')->nullable();
-            $table->date('project_start_date')->nullable();
-            $table->date('project_end_date')->nullable();
             $table->string('link_to_source_code');
             $table->string('link_to_project_view')->nullable();
             $table->string('preview_image')->nullable();

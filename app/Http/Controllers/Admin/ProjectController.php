@@ -90,7 +90,6 @@ class ProjectController extends Controller
     {
         $validated = $request->validated();
 
-
         if ($request->has('preview_image')) {
 
 

@@ -15,7 +15,7 @@
 
                             <a class="text-decoration-none text-dark btn btn-light border fs-6 py-1 align-items-center"
                                 href="{{ route('admin.projects.edit', $project) }}">
-                                <span class="btn btn-light">Edit your project</span> 
+                                <span class="btn btn-light">Edit your project</span>
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
                             </a>
                             <a class="btn btn-light text-decoration-none text-secondary py-2"
@@ -44,7 +44,7 @@
 
                             <h5 class="d-inline-block">Technology:</h5>
 
-                            <div class="technologies">
+                            <div class="ms-2 technologies d-inline-block">
                                 @forelse ($project->technologies as $technology)
                                     <span class="badge p-bg-light">{{ $technology->name }}</span>
 
@@ -57,13 +57,9 @@
 
                         <hr>
 
-                        <div class="project-date">
-                            <div class="projectStart">
-                                Start Date: {{ $project->project_start_date }}
-                            </div>
-                            <div class="projectEnd">
-                                End Date: {{ $project->project_end_date }}
-                            </div>
+                        <div class="project-duration">
+                            <h5 class="d-inline-block">Project Duration: </h5>
+                            {{ $project->project_duration }}
                         </div>
                     </div>
 
@@ -80,8 +76,7 @@
 
 
                     <div class="img_box">
-                        <img class="card-img-bottom" src="{{ asset('storage/' . $project->preview_image) }}"
-                            alt="">
+                        <img class="card-img-bottom" src="{{ asset('storage/' . $project->preview_image) }}" alt="">
                         <span class="position-absolute bottom-0 start-0 text-dark bg-info rounded px-3 py-1 m-2">
                             Website preview
                         </span>

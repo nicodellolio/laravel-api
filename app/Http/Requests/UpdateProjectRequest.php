@@ -27,8 +27,7 @@ class UpdateProjectRequest extends FormRequest
             'description' => 'nullable',
             'type_id' => 'nullable|exists:types,id',
             'technologies' => 'exists:technologies,id',
-            'project_start_date' => 'nullable|date ',
-            'project_end_date' => 'nullable|date',
+            'project_duration' => 'nullable',
             'link_to_source_code' => 'required|starts_with:http',
             'link_to_project_view' => 'nullable|starts_with:http',
             'preview_image' => 'nullable'

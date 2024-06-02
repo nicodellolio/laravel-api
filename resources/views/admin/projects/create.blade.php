@@ -53,17 +53,10 @@
 
 
             <div class="mb-3">
-                <label class="form-label text-light fw-light" for="project_start_date">Project Start Date</label>
-                <input type="text" class="form-control" name="project_start_date" id="project_start_date"
-                    aria-describedby="project_start_dateHelp" placeholder="Type here the Project Start Date"
-                    value="{{ old('project_start_date') }}">
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label text-light fw-light" for="project_end_date">Project End Date</label>
-                <input type="text" class="form-control" name="project_end_date" id="project_end_date"
-                    aria-describedby="project_end_dateHelp" placeholder="Type here the Project End Date"
-                    value="{{ old('project_end_date') }}">
+                <label class="form-label text-light fw-light" for="project_duration">Project Duration</label>
+                <input type="text" class="form-control" name="project_duration" id="project_duration"
+                    aria-describedby="project_durationHelp" placeholder="Type here the Project Start Date"
+                    value="{{ old('project_duration') }}">
             </div>
 
             <div class="mb-3">

@@ -12,7 +12,7 @@ class Project extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'slug', 'description', 'type_id', 'project_start_date', 'project_end_date', 'link_to_source_code', 'link_to_project_view', 'preview_image'];
+    protected $fillable = ['title', 'slug', 'description', 'type_id', 'project_duration', 'link_to_source_code', 'link_to_project_view', 'preview_image'];
 
     /**
      * The types that belong to the Project
