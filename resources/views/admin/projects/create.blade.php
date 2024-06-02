@@ -36,14 +36,14 @@
                 </select>
             </div>
 
-            <label class="form-label text-light fw-light" for="technology">Project Type</label>
-            <div class="mb-3 d-flex border border-light rounded gap-1 py-2">
+            <label class="form-label text-light fw-light" for="technology">Project Technology</label>
+            <div class="mb-3 d-flex border border-light rounded gap-1 py-2 align-items-center technology-selector">
 
                 @foreach ($technologies as $technology)
                 
                 <div class="form-check ">
                     
-                    <input name="technologies[]" type="checkbox" class="btn-check" id="tag-{{$technology->id}}" value="{{$technology->id}}" autocomplete="off" {{ in_array($technology->id, old('technologies', [])) ? 'checked' : '' }}>
+                    <input name="technologies[]" type="checkbox" class="btn-check " id="tag-{{$technology->id}}" value="{{$technology->id}}" autocomplete="off" {{ in_array($technology->id, old('technologies', [])) ? 'checked' : '' }}>
                     <label class="btn text-light" for="tag-{{$technology->id}}">{{$technology->name}}</label>
                     
                 </div>

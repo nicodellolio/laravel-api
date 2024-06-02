@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
     public function index(){
-        $projects = Project::paginate(5);
+        $projects = Project::paginate(6);
         return response()->json([
             'success' => true,
             'projects' => $projects

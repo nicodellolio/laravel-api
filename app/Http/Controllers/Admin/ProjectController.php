@@ -42,6 +42,7 @@ class ProjectController extends Controller
         $validated = $request->validated();
 
         $slug = Str::slug($request->title);
+
         
         $validated['slug'] = $slug;
         
@@ -100,6 +101,7 @@ class ProjectController extends Controller
             $image_path = Storage::put('uploads', $validated['preview_image']);
             $validated['preview_image'] = $image_path;
         }
+
 
         $technologies = Technology::all();
 

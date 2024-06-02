@@ -19,15 +19,15 @@ class ProjectSeeder extends Seeder
         for ($i=0; $i < 15; $i++) { 
             $project = new Project();
             
-            $project->title = $faker->sentence(4);
-            $project->slug = Str::slug($project->title, '-');
-            $project->description = $faker->sentence(15);
-            $project->type_id = (1);
-            $project->project_start_date = $faker->date();
-            $project->project_end_date = $faker->date();
-            $project->link_to_source_code = $faker->url();
-            $project->link_to_project_view = $faker->url();
-            $project->save();
+            // $project->title = $faker->sentence(4);
+            // $project->slug = Str::slug($project->title, '-');
+            // $project->description = $faker->sentence(15);
+            // $project->type_id = (1);
+            // $project->project_start_date = $faker->date();
+            // $project->project_end_date = $faker->date();
+            // $project->link_to_source_code = $faker->url();
+            // $project->link_to_project_view = $faker->url();
+            // $project->save();
         }
     }
 }

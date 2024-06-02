@@ -27,8 +27,8 @@ class StoreProjectRequest extends FormRequest
             'technologies'=>'exists:technologies,id',
             'description' => 'nullable',
             'type_id' => 'nullable|exists:types,id',
-            'project_start_date' => 'nullable|date ',
-            'project_end_date' => 'nullable|date',
+            'project_start_date' => 'nullable ',
+            'project_end_date' => 'nullable',
             'link_to_source_code' => 'required|starts_with:http',
             'link_to_project_view' => 'nullable|starts_with:http',
             'preview_image' => 'nullable'

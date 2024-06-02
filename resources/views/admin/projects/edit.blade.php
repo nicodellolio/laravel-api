@@ -54,11 +54,11 @@
             </div>
 
             <label class="form-label text-light fw-light" for="technology">Project Type</label>
-            <div class="mb-3 d-flex border border-light rounded gap-1 py-2">
+            <div class="mb-3 d-flex border border-light rounded gap-1 py-2 technology-selector">
 
                 @foreach ($technologies as $technology)
                     @if ($errors->any())
-                        <div class="form-check ">
+                        <div class="form-check">
                             <h4 class="text-danger">error</h4>
 
 
